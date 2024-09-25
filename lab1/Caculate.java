@@ -17,6 +17,7 @@ public class Caculate {
         double product = num1 * num2;
         double quotient = num1 / num2;
         // Print result
+        System.out.println("Le Dong Canh Phu - 20225755");
         System.out.println("Sum: " + sum);
         System.out.println("Difference: " + difference);
         System.out.println("Product: " + product);
