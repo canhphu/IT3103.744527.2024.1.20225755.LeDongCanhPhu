@@ -54,12 +54,24 @@ public class Equation {
         Double c3 = input.nextDouble();
         Double delta = b3*b3 - 4*a3*c3;
         //Exception cases
-        if(delta<0) {
-            System.out.println("Phuong trinh vo nghiem");
-        } else if(delta==0) {
-            System.out.println("Phuong trinh co nghiem kep x = " + -b3/2*a3);
+        if(a3==0) {
+            if(b3==0) {
+                if(c3==0) {
+                    System.out.println("Phuong trinh co vo so nghiem");
+                } else {
+                    System.out.println("Phuong trinh vo nghiem");
+                }
+            } else {
+                System.out.println("Phuong trinh co nghiem x = " + -c3/b3);
+            }
         } else {
-            System.out.println("Phuong trinh co 2 nghiem x1 = " + (-b3-Math.sqrt(delta))/2*a3 + ", x2 = " + (-b3+Math.sqrt(delta))/2*a3);
+            if(delta<0) {
+                System.out.println("Phuong trinh vo nghiem");
+            } else if(delta==0) {
+                System.out.println("Phuong trinh co nghiem kep x = " + -b3/2*a3);
+            } else {
+                System.out.println("Phuong trinh co 2 nghiem x1 = " + (-b3-Math.sqrt(delta))/2*a3 + ", x2 = " + (-b3+Math.sqrt(delta))/2*a3);
+            }
         }
         input.close();
     }
