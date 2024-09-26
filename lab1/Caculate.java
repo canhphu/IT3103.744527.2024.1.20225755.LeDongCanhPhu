@@ -27,6 +27,6 @@ public class Caculate {
         } else {
             System.out.println("Quotient: " + quotient);
         }
+        input.close();
     }
-
 }
