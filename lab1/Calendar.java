@@ -128,7 +128,7 @@ public class Calendar {
     while(!validYear) {
         System.out.print("Le Dong Canh Phu - 20225755 - Enter the year: ");
         int year = input.nextInt();
-        if(year>0) {
+        if(year>0 && year < 10000) {
             validYear = true;
             if(year%4==0) {
                 if(year%100==0) {
