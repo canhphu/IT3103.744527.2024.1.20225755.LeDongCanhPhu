@@ -9,22 +9,26 @@ public class Matrices {
         int m = input.nextInt();
         System.out.print("Enter the number of columns: "); //Enter the number of columns
         int n = input.nextInt();
-        int[][] matrix = new int[m][n]; // Create a matrix with m rows and n columns
-        for (int k = 0;k<2;k++) {
-            System.out.println("Matrix " + (k+1));
+        int[][] matrix1 = new int[m][n]; // Create a matrix with m rows and n columns
+        int[][] matrix2 = new int[m][n]; 
+            System.out.println("Matrix 1: ");
             for(int i = 0; i < m; i++) {
                 for(int j = 0; j < n; j++) {
-                    System.out.print("Enter the element at position (" + (i+1) + ", " + (j+1) + "): "); //Enter the element
-                    matrix[i][j] = input.nextInt();
+                    matrix1[i][j] = input.nextInt();
                 }
             }
-            System.out.println("Le Dong Canh Phu - 20225755 - Matrix " + (k+1) + " is: ");
-            for(int i = 0; i < m; i++) {
-                for(int j = 0; j < n; j++) {
-                    System.out.print(matrix[i][j] + " ");
+            System.out.println("Matrix 2: ");
+            for(int i=0;i<m;i++) {
+                for(int j=0;j<n;j++) {
+                    matrix2[i][j] = input.nextInt();
                 }
-                System.out.println();
             }
+        System.out.println("Sum of two matrices: ");
+        for(int i=0;i<m;i++) {
+            for(int j=0;j<n;j++) {
+                System.out.print(matrix1[i][j] + matrix2[i][j] + " "); // Print the sum of two matrices
+            }
+            System.out.println();
         }       
         input.close();        
     }
