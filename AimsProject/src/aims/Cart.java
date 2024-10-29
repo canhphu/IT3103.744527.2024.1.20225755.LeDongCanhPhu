@@ -16,8 +16,8 @@ public class Cart {
             return false;
         }
     }
-    public int totalCost() {
-        int total = 0;
+    public float totalCost() {
+        float total = 0;
         for(int i = 0; i < qtyOrdered; i++) {
             total += itemsOrdered[i].getCost();
         }
