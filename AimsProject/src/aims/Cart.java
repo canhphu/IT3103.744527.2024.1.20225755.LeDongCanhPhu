@@ -8,11 +8,11 @@ public class Cart {
         if(qtyOrdered < MAX_NUMBERS_ORDERED) {
             itemsOrdered[qtyOrdered] = disc;
             qtyOrdered++;
-            System.out.println("The disc has been added.");
+            System.out.println("LeDongCanhPhu-20225755-The disc has been added.");
             return true;
         }
         else {
-            System.out.println("The cart is almost full.");
+            System.out.println("LeDongCanhPhu-20225755-The cart is almost full.");
             return false;
         }
     }
@@ -31,10 +31,10 @@ public class Cart {
                     itemsOrdered[j] = itemsOrdered[j + 1];
                 }
                 qtyOrdered--;
-                System.out.println("The disc has been removed.");
+                System.out.println("LeDongCanhPhu-20225755-The disc has been removed.");
                 return;
             }
         }
-        System.out.println("The disc is not in the cart.");
+        System.out.println("LeDongCanhPhu-20225755-The disc is not in the cart.");
     }
 }
