@@ -23,4 +23,18 @@ public class Cart {
         }
         return total;
     }
+
+    public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
+        for(int i = 0; i < qtyOrdered; i++) {
+            if(itemsOrdered[i] == disc) {
+                for(int j = i; j < qtyOrdered - 1; j++) {
+                    itemsOrdered[j] = itemsOrdered[j + 1];
+                }
+                qtyOrdered--;
+                System.out.println("The disc has been removed.");
+                return;
+            }
+        }
+        System.out.println("The disc is not in the cart.");
+    }
 }
