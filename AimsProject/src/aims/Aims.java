@@ -18,5 +18,10 @@ public class Aims {
         //print total cost of the items in the cart
         System.out.println("Total cost is: ");
         System.out.println(anOrder.totalCost());
+
+        //remove a dvd from the cart
+        anOrder.removeDigitalVideoDisc(dvd2);
+        System.out.println("The total cost after removing a dvd is: ");
+        System.out.println(anOrder.totalCost());
     }
 }
