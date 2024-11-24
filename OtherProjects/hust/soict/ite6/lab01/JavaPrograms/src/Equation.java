@@ -1,4 +1,4 @@
-package lab1;
+
 import java.util.Scanner;
 import java.lang.Math;
 public class Equation {

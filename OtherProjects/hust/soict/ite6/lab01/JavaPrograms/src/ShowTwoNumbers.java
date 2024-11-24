@@ -1,5 +1,4 @@
 //Example 4: ShowTwoNumbers.java
-package lab1;
 import javax.swing.JOptionPane;
 public class ShowTwoNumbers {
     public static void main(String[] args) {

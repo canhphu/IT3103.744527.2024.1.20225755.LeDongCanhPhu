@@ -1,4 +1,4 @@
-package lab1;
+
 //Example 1: HelloWorld.java
 //Text-printing program.
 public class HelloWorld {

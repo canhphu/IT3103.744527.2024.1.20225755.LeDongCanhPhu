@@ -1,4 +1,4 @@
-package lab1;
+package lab1.Matrices.src;
 import java.util.Scanner;
 
 public class Matrices {
