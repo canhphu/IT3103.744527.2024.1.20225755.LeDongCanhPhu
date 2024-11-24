@@ -61,5 +61,7 @@ public class DigitalVideoDisc {
     public int getId() { 
         return id; // Get the id of the DigitalVideoDisc object
     }
-    
+    public String toString() {
+        return ". DVD - " + title + " - " + category + " - " + director + " - " + length + ": " + cost + "$";
+    }
 }

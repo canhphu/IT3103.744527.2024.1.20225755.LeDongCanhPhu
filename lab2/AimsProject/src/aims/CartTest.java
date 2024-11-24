@@ -18,5 +18,7 @@ public class CartTest {
         //Test the print method
         cart.printCart();
         //To-do: Test the search methods here
+        cart.SearchDVDbyID(2);
+        cart.SearchDVDbyTitle("The Lion King");
     }
 }
