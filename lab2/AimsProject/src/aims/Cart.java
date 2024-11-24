@@ -66,4 +66,14 @@ public class Cart {
         }
         System.out.println("LeDongCanhPhu-20225755-The disc is not in the cart.");
     }
+
+    public void printCart() {
+        System.out.println("*************LeDongCanhPhu-20225755's CART*************");
+        System.out.println("Ordered Items:");
+        for(int i = 0; i < qtyOrdered; i++) {
+            System.out.println(i+1 + ". DVD - " + itemsOrdered[i].getTitle() + " - " + itemsOrdered[i].getCategory() + " - " + 
+                                itemsOrdered[i].getDirector() + " - " + itemsOrdered[i].getLength() + ": " + itemsOrdered[i].getCost() + "$");
+        }
+        System.out.println("******************************************************");
+    }
 }
