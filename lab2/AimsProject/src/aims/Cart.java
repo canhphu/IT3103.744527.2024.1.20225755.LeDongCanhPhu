@@ -75,35 +75,4 @@ public class Cart {
         }
         System.out.println("*******************************************************");
     }
-
-    public void SearchDVDbyID(int id) {
-        for(int i = 0; i < qtyOrdered; i++) {
-            if(itemsOrdered[i].getId() == id) {
-                System.out.println("LeDongCanhPhu-20225755-The disc is found.");
-                System.out.println(itemsOrdered[i].toString());
-                return;
-            }
-        }
-        System.out.println("LeDongCanhPhu-20225755-The disc is not found.");
-    }
-
-    public boolean isMatch(String title) {
-        for(int i = 0; i < qtyOrdered; i++) {
-            if(itemsOrdered[i].getTitle().equals(title)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public void SearchDVDbyTitle(String title) {
-        for(int i = 0; i < qtyOrdered; i++) {
-            if(itemsOrdered[i].getTitle().equals(title)) {
-                System.out.println("LeDongCanhPhu-20225755-The disc is found.");
-                System.out.println(itemsOrdered[i].toString());
-                return;
-            }
-        }
-        System.out.println("LeDongCanhPhu-20225755-The disc is not found.");
-    }
 }
