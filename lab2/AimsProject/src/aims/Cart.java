@@ -71,9 +71,39 @@ public class Cart {
         System.out.println("*************LeDongCanhPhu-20225755's CART*************");
         System.out.println("Ordered Items:");
         for(int i = 0; i < qtyOrdered; i++) {
-            System.out.println(i+1 + ". DVD - " + itemsOrdered[i].getTitle() + " - " + itemsOrdered[i].getCategory() + " - " + 
-                                itemsOrdered[i].getDirector() + " - " + itemsOrdered[i].getLength() + ": " + itemsOrdered[i].getCost() + "$");
+            System.out.println(i+1 + itemsOrdered[i].toString());
         }
         System.out.println("*******************************************************");
+    }
+
+    public void SearchDVDbyID(int id) {
+        for(int i = 0; i < qtyOrdered; i++) {
+            if(itemsOrdered[i].getId() == id) {
+                System.out.println("LeDongCanhPhu-20225755-The disc is found.");
+                System.out.println(itemsOrdered[i].toString());
+                return;
+            }
+        }
+        System.out.println("LeDongCanhPhu-20225755-The disc is not found.");
+    }
+
+    public boolean isMatch(String title) {
+        for(int i = 0; i < qtyOrdered; i++) {
+            if(itemsOrdered[i].getTitle().equals(title)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void SearchDVDbyTitle(String title) {
+        for(int i = 0; i < qtyOrdered; i++) {
+            if(itemsOrdered[i].getTitle().equals(title)) {
+                System.out.println("LeDongCanhPhu-20225755-The disc is found.");
+                System.out.println(itemsOrdered[i].toString());
+                return;
+            }
+        }
+        System.out.println("LeDongCanhPhu-20225755-The disc is not found.");
     }
 }
