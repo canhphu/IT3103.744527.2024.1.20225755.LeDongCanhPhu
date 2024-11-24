@@ -49,4 +49,17 @@ public class DigitalVideoDisc {
     public void setTitle(String title) {
         this.title = title;
     }
+    private static int nbDigitalVideoDiscs = 0; // Class attribute
+    private int id; // Instance attribute
+    public DigitalVideoDisc() {
+        nbDigitalVideoDiscs++; // Increase the number of DigitalVideoDisc objects created
+        this.id = nbDigitalVideoDiscs; // Assign the id of the DigitalVideoDisc object
+    }
+    public static int getNbDigitalVideoDiscs() { 
+        return nbDigitalVideoDiscs; // Get the number of DigitalVideoDisc objects created
+    }
+    public int getId() { 
+        return id; // Get the id of the DigitalVideoDisc object
+    }
+    
 }
