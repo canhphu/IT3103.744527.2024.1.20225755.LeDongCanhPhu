@@ -1,4 +1,4 @@
-package aims;
+package hust.soict.ite6.aims.disc.DigitalVideoDisc;
 
 public class DigitalVideoDisc {
     private String title;

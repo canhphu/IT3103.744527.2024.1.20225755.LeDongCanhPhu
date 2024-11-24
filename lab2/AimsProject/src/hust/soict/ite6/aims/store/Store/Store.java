@@ -1,4 +1,6 @@
-package aims;
+package hust.soict.ite6.aims.store.Store;
+
+import hust.soict.ite6.aims.disc.DigitalVideoDisc.DigitalVideoDisc;
 
 public class Store {
     public DigitalVideoDisc[] itemsInStore = new DigitalVideoDisc[20];
