@@ -1,1 +1,215 @@
 file test
+dbkdasfhadsfh
+fadskljkfhdsak;lfhads
+fadsf;hadsfj
+asdfads
+I.	Title and abstract
+Detection of people through Computer Vision in the Internet of Things scenarios to improve security in Smart Cities, Smart Towns, and Smart Homes. 
+II.	Introduction
+This article is about the ability to identify humans in photos and utilize them as sensors using Computer Vision in the Internet of Things. The review suggests automating the usage of IP cameras in households, cities, and safety zones using this technique. To create an automated or semi-automated sensors, a Computer Vision module integrated into an IoT platform called Midgar was used.
+III.	Research Method
+-	They designed and implemented a Computer Vision module that can detect people in pictures taken by IP cameras. They also modified the Midgar IoT platform to support the integration of the Computer Vision module and communication with the IP cameras.
+-	They collected two types of data: manual pictures and automatic pictures. Manual pictures are pictures taken by the researchers themselves using an IP camera. Automatic pictures are pictures taken by the IP camera when it detects a movement. They collected a total of 1,200 pictures for each type of data.
+IV.	Findings and discussion
+The review describes with all detail the methodology in order to evaluate the authors’ hypotheses. After that, the authors show the results that they obtained in their evaluation. They have divided the evaluation into two phases: manual pictures and automatic pictures. Moreover, they have compared the results of three different models to conclude what model was better for their proposal.
+V.	Conclusion
+-	The review has presented a possible solution to use Computer Vision in the Internet of Things. This could allow the use of IP cameras and pictures as sensors. Besides, this could open the door to other similar applications like automating things using Optical Character Recognition (OCR), face detection, or gestures.
+-	This proposal is a possible solution for some of the current problems of the IoT such as creating a Domain-Specific Language using Model-Driven Engineering to facilitate Computer Vision.
+I. Mô hình SWOT
+1. SWOT là gì?
+SWOT viết tắt của 4 từ tiếng Anh: Strengths (Điểm mạnh), Weaknesses (Điểm yếu), Opportunities (Cơ hội) và Threats (Thách thức).
+2. Phân tích SWOT là gì?
+SWOT là một kỹ thuật chiến lược để nhận dạng rõ điểm mạnh, điểm yếu, cơ hội và thách thức của cá nhân hay tổ chức. Điểm mạnh và điểm yếu là những yếu tố nội bộ, còn cơ hội và thách thức là những yếu tố môi trường bên ngoài.
+•	Strengths (Điểm mạnh): Đây là những khả năng, kỹ năng, kiến thức, và tài năng mà bạn có. Điểm mạnh có thể bao gồm:
+o	Trình độ chuyên môn.
+o	Các kỹ năng có liên quan, kinh nghiệm công tác.
+o	Có nền tảng giáo dục tốt.
+o	Có mối quan hệ rộng và vững chắc.
+o	Có trách nhiệm, sự tận tâm và niềm đam mê công việc.
+o	Có khả năng phản ứng nhạy bén nhanh đối với công việc.
+•	Weaknesses (Điểm yếu): Đây là những hạn chế hoặc thiếu sót mà bạn cần cải thiện. Điểm yếu có thể bao gồm:
+o	Những tính cách không phù hợp với công việc, những thói quen làm việc tiêu cực.
+o	Thiếu kinh nghiệm công tác hoặc kinh nghiệm không thích hợp.
+o	Thiếu sự đào tạo chính quy, bài bản.
+o	Hạn chế về các mối quan hệ.
+o	Thiếu sự định hướng hay chưa có mục tiêu rõ ràng.
+o	Kỹ năng nghề nghiệp chưa cao.
+•	Opportunities (Cơ hội): Đây là những cơ hội mà bạn có thể tận dụng để phát triển bản thân. Cơ hội có thể bao gồm:
+o	Các xu hướng triển vọng.
+o	Nền kinh tế phát triển bùng nổ.
+o	Cơ hội nghề nghiệp mới rộng mở.
+o	Một dự án đầy hứa hẹn được giao phó.
+o	Học hỏi được những kỹ năng hay kinh nghiệm mới.
+o	Sự xuất hiện của công nghệ mới.
+o	Những chính sách mới được áp dụng.
+•	Threats (Thách thức): Đây là những rủi ro hoặc thách thức mà bạn có thể gặp phải. Thách thức có thể bao gồm:
+o	Sự cơ cấu và tổ chức lại ngành nghề.
+o	Những áp lực khi thị trường biến động.
+o	Một số kỹ năng trở nên lỗi thời.
+o	Bạn không sẵn sàng với phát triển của công nghệ.
+o	Sự cạnh tranh gay gắt, với công ty cũng như với cá nhân.
+o	Cần nâng cao hiệu quả công ty.
+3. Lợi ích của việc phân tích SWOT bản thân
+Phân tích SWOT bản thân là một công cụ hữu ích giúp mỗi người hiểu rõ về bản thân, từ đó phát huy điểm mạnh, khắc phục điểm yếu, tận dụng cơ hội và ứng phó với thách thức. Lợi ích của việc phân tích SWOT bản thân bao gồm:
+•	Hiểu rõ bản thân hơn: Xác định được điểm mạnh, điểm yếu, cơ hội và thách thức của bản thân, hiểu rõ hơn về khả năng và giới hạn của mình, đưa ra định hướng và kế hoạch phát triển phù hợp.
+•	Định hướng phát triển bản thân: Xác định được những lĩnh vực cần phát triển và những lĩnh vực cần cải thiện, xây dựng kế hoạch phát triển bản thân phù hợp với mục tiêu và sở thích.
+•	Chuẩn bị cho các cuộc phỏng vấn xin việc: Chuẩn bị tốt hơn cho các cuộc phỏng vấn, thể hiện bản thân một cách hiệu quả và thuyết phục nhà tuyển dụng.
+•	Nâng cao hiệu quả công việc: Xác định được điểm mạnh và điểm yếu trong công việc, phát huy thế mạnh, khắc phục điểm yếu, sẵn sàng đối mặt với thách thức để nâng cao hiệu quả công việc.
+4. Cách phân tích xây dựng mô hình SWOT
+Để thực hiện phân tích SWOT một cách toàn diện:
+•	Xác định mục tiêu: Trước khi tiến hành phân tích, xác định mục tiêu hoặc thành công mà bản thân muốn đạt được.
+•	Lập bảng SWOT: Lập một bảng gồm bốn ô, tương ứng với bốn yếu tố của mô hình SWOT. Trong mỗi ô, liệt kê các yếu tố cụ thể, chi tiết và thực tế.
+•	Trả lời các câu hỏi sau:
+o	Strength (Điểm mạnh):
+	Bản thân cảm thấy mình giỏi nhất trong lĩnh vực nào?
+	Bản thân có những kỹ năng đặc biệt, nổi trội nào, có thể làm tốt hơn người khác như thế nào?
+	Bản thân đã từng đạt được thành công nào đáng kể?
+	Những phẩm chất tích cực nào như sự kiên nhẫn, sự quyết tâm hay sự sáng tạo mà mình đang sở hữu?
+	Khả năng làm việc nhóm của bản thân có tốt không? Khả năng lắng nghe và giao tiếp hiệu quả không?
+	Bản thân có khả năng tổ chức công việc và quản lý thời gian tốt không? Những sở thích hoặc đam mê nào liên quan đến công việc của mình?
+	Bản thân có lòng can đảm và sẵn lòng đối mặt với thách thức?
+	Những người khác (sếp, bạn bè,...) coi điểm mạnh của bản thân mình là gì?
+o	Weakness (Điểm yếu):
+	Bản thân thường né tránh những nhiệm vụ nào vì không cảm thấy tự tin khi thực hiện chúng?
+	Những người xung quanh coi điểm yếu của bạn là gì?
+	Bản thân có thấy tự tin vào trình độ học vấn và kỹ năng của mình không? Nếu không thì bản thân cảm thấy yếu nhất ở đâu?
+	Thói quen làm việc tiêu cực của bản thân là gì? (ví dụ: thường xuyên đi muộn, vô tổ chức, nóng nảy hoặc xử lý căng thẳng kém).
+	Đặc điểm tính cách nào cản trở bản thân trong lĩnh vực của mình? Ví dụ, nếu phải tổ chức các cuộc họp thường xuyên, nỗi sợ nói trước đám đông sẽ là một điểm yếu lớn.
+o	Opportunity (Cơ hội):
+	Công nghệ mới nào có thể giúp bản thân trong công việc? Hoặc bản thân có thể nhận được sự giúp đỡ từ người khác hoặc từ mọi người thông qua internet không?
+	Ngành mà bản thân theo đuổi có đang phát triển không? Nếu vậy, làm thế nào để tận dụng thị trường hiện tại?
+	Bản thân có mạng lưới quan hệ chiến lược để giúp đỡ hoặc đưa ra lời khuyên hữu ích khi cần không?
+	Bản thân thấy những xu hướng nào trong công ty và có thể tận dụng chúng như thế nào?
+	Có nhu cầu nào trong công ty hoặc ngành của mình mà không ai đáp ứng được không?
+	Khách hàng hoặc nhà cung cấp có phàn nàn về điều gì đó trong công ty của mình không? Nếu vậy, bản thân có thể tạo cơ hội bằng cách đưa ra giải pháp không?
+o	Threat (Thách thức):
+	Hiện tại bản thân đang gặp phải những trở ngại gì trong công việc?
+	Có đồng nghiệp nào đang cạnh tranh với mình về các dự án hoặc vai trò không?
+	Công việc (hoặc nhu cầu về những việc mà bản thân đang làm) có đang thay đổi không?
+	Việc thay đổi công nghệ có đe dọa vị trí hiện tại của bản thân không?
+•	Phân tích và hành động:
+o	Thẳng thắn và không bỏ sót trong quá trình thống kê, biên tập lại, xóa bỏ những đặc điểm trùng lặp, gạch chân những đặc điểm riêng biệt, quan trọng.
+o	Phân tích ý nghĩa của chúng.
+o	Vạch rõ những hành động cần làm, như củng cố các kỹ năng quan trọng, loại bỏ các mặt còn hạn chế, khai thác các cơ hội, bảo vệ bản thân khỏi các nguy cơ, rủi ro.
+o	Định kỳ cập nhật biểu đồ SWOT, làm tăng thêm tính hoàn thiện và hiệu quả cho kế hoạch gây dựng sự nghiệp, chắc chắn tìm ra con đường dẫn đến thành công.
+5. Ví dụ áp dụng mô hình này vào việc học tập
+Mô hình SWOT là một công cụ phân tích chiến lược được sử dụng rộng rãi để đánh giá các yếu tố nội và ngoại vi ảnh hưởng đến một tổ chức, dự án hoặc cá nhân. Áp dụng mô hình này vào việc xây dựng chiến lược học tập ở đại học sẽ giúp bạn có cái nhìn tổng quan về các yếu tố quan trọng có thể ảnh hưởng đến quá trình học tập của bạn. Dưới đây là hướng dẫn cụ thể:
+•	Áp dụng phân tích SWOT để cải thiện việc học tập.
+o	Xác định mục tiêu học tập: Xác định rõ mục tiêu học tập của bạn là gì (ví dụ: hoàn thành khóa học, nâng cao kỹ năng, đạt điểm cao trong kỳ thi,...).
+o	Phân tích Điểm mạnh (Strengths): Xác định những điểm mạnh, lợi thế của bạn như khả năng tập trung, ghi nhớ tốt, kỷ luật, phương pháp học hiệu quả,... Ghi nhận môn học bạn thích và có thế mạnh.
+o	Phân tích Điểm yếu (Weaknesses): Xác định những yếu điểm, hạn chế của bạn như thiếu kiên nhẫn, khó tập trung, kém kỹ năng làm việc nhóm,... Ghi nhận môn học bạn không thích hoặc yếu kém.
+o	Phân tích Cơ hội (Opportunities): Xác định những cơ hội có thể tận dụng để nâng cao hiệu quả học tập như các khóa học trực tuyến, tài liệu học tập miễn phí, sự hỗ trợ từ giảng viên, các buổi học nhóm, câu lạc bộ học thuật,...
+o	Phân tích Thách thức (Threats): Xác định những thách thức có thể gây trở ngại cho quá trình học tập như khối lượng bài vở lớn, thiếu thời gian, áp lực thi cử, môi trường học tập không thuận lợi,...
+•	Ví dụ về việc học đại học
+o	Mục tiêu học tập: Hoàn thành khóa học và tốt nghiệp với điểm số cao.
+o	Strengths (Điểm mạnh):
+	Khả năng ghi nhớ tốt và tư duy logic.
+	Kỹ năng quản lý thời gian hiệu quả.
+	Tính kỷ luật cao và kiên trì trong học tập.
+	Kỹ năng tự học tốt và biết cách tìm kiếm tài liệu.
+o	Weaknesses (Điểm yếu):
+	Thiếu kiên nhẫn trong việc giải quyết vấn đề khó.
+	Kỹ năng làm việc nhóm kém.
+	Khó tập trung khi học ở môi trường ồn ào.
+	Thường xuyên trì hoãn công việc.
+o	Opportunities (Cơ hội):
+	Tham gia các khóa học trực tuyến miễn phí hoặc giá rẻ để bổ sung kiến thức.
+	Tham gia các buổi học nhóm để học hỏi kinh nghiệm từ bạn bè.
+	Tận dụng các buổi tư vấn học tập từ giảng viên.
+	Tham gia câu lạc bộ học thuật để mở rộng kiến thức và kỹ năng.
+o	Threats (Thách thức):
+	Khối lượng bài vở lớn và áp lực thi cử.
+	Thiếu thời gian do phải làm thêm hoặc tham gia hoạt động khác.
+	Môi trường học tập không thuận lợi (ồn ào, không đủ tài liệu,...).
+	Sự cạnh tranh gay gắt từ bạn bè.
+•	Kế hoạch hành động:
+o	Phát huy điểm mạnh: Duy trì kỷ luật và quản lý thời gian hiệu quả, tiếp tục rèn luyện kỹ năng tự học và tư duy logic.
+o	Khắc phục điểm yếu: Luyện tập kiên nhẫn và giải quyết vấn đề, tham gia các khóa học làm việc nhóm, tìm kiếm không gian học tập yên tĩnh.
+o	Tận dụng cơ hội: Tham gia các khóa học trực tuyến và buổi học nhóm, tìm kiếm sự hỗ trợ từ giảng viên, tham gia câu lạc bộ học thuật.
+o	Đối phó với thách thức: Lên kế hoạch học tập chi tiết, ưu tiên công việc quan trọng, tìm kiếm sự hỗ trợ khi cần thiết, giữ tâm lý tích cực và tự tin.
+6. Liên hệ thực tiễn với cuộc sống
+Mô hình SWOT không chỉ áp dụng trong học tập mà còn có thể được áp dụng trong nhiều khía cạnh khác của cuộc sống như sự nghiệp, mối quan hệ, quản lý thời gian, quản lý tài chính,... Việc thực hiện phân tích SWOT giúp bạn hiểu rõ hơn về bản thân, xác định được mục tiêu, xây dựng kế hoạch hành động phù hợp và nâng cao hiệu quả trong mọi hoạt động.
+II. Mô hình WOOP
+1. WOOP là gì?
+WOOP là viết tắt của Wish (Điều ước), Outcome (Kết quả), Obstacle (Trở ngại) và Plan (Kế hoạch). Đây là một phương pháp thiết lập mục tiêu và thay đổi hành vi, giúp xác định rõ mong muốn, hình dung kết quả, nhận diện trở ngại và lập kế hoạch hành động.
+2. Phân tích WOOP
+WOOP là một kỹ thuật thiết lập mục tiêu và thay đổi hành vi, giúp bạn xác định và thực hiện mục tiêu của mình một cách hiệu quả. Phân tích WOOP bao gồm bốn bước chính:
+•	Wish (Điều ước): Xác định điều bạn mong muốn đạt được.
+•	Outcome (Kết quả): Hình dung kết quả tốt đẹp nhất khi đạt được điều ước.
+•	Obstacle (Trở ngại): Nhận diện những trở ngại có thể cản trở việc đạt được điều ước.
+•	Plan (Kế hoạch): Lập kế hoạch hành động để vượt qua trở ngại và đạt được điều ước.
+3. Ví dụ về cách áp dụng mô hình WOOP
+Ví dụ, tôi muốn cải thiện sức khỏe thể chất của mình thông qua việc tập thể dục đều đặn.
+•	Wish (Điều ước): Tôi muốn cải thiện sức khỏe thể chất của mình thông qua việc tập thể dục đều đặn.
+•	Outcome (Kết quả): Tôi sẽ cảm thấy mạnh mẽ hơn, tăng sự tự tin và có thể tận hưởng cuộc sống một cách tích cực hơn. Cơ thể của tôi sẽ trở nên khỏe mạnh hơn và tinh thần của tôi sẽ được nâng cao.
+•	Obstacle (Trở ngại): Thời gian rảnh rỗi ít ỏi và công việc hàng ngày đôi khi làm cho tôi cảm thấy mệt mỏi và thiếu động lực. Đôi khi, việc phải vượt qua cảm giác lười biếng và ức chế về khả năng của bản thân cũng là một trở ngại.
+•	Plan (Kế hoạch):
+o	Kế hoạch 1: Tận dụng thời gian buổi sáng để tập thể dục trước khi đi làm, điều này sẽ giúp tôi khởi đầu ngày mới với năng lượng tích cực.
+o	Kế hoạch 2: Chuẩn bị sẵn trang phục tập thể dục và các dụng cụ cần thiết vào buổi tối trước đó để tiết kiệm thời gian vào buổi sáng.
+o	Kế hoạch 3: Sử dụng các ứng dụng tập luyện trên điện thoại để có thể tập tại nhà khi không có thời gian đến phòng tập.
+o	Kế hoạch 4: Tìm một người bạn hoặc nhóm tập thể dục để có thêm động lực và trách nhiệm lẫn nhau.
+4. Ý nghĩa và ứng dụng của mô hình WOOP
+Mô hình WOOP giúp bạn xác định rõ mục tiêu, hình dung kết quả tích cực, nhận diện trở ngại và lập kế hoạch hành động cụ thể để đạt được mục tiêu. Các bước trong WOOP giúp bạn:
+•	Đặt mục tiêu cụ thể và có ý nghĩa: Giúp bạn xác định rõ ràng và chính xác những gì bạn muốn đạt được, điều này tạo động lực và cam kết cao hơn.
+•	Hình dung kết quả lý tưởng: Giúp bạn thấy trước những lợi ích tích cực khi đạt được mục tiêu, điều này giúp tăng động lực.
+•	Nhận biết các rào cản tiềm ẩn: Giúp bạn chuẩn bị tinh thần và kế hoạch để đối phó với các khó khăn, từ đó tăng khả năng thành công.
+•	Phát triển kế hoạch hành động cụ thể: Giúp bạn có những bước đi rõ ràng và cụ thể để đạt được mục tiêu, đảm bảo tính khả thi và linh hoạt trong quá trình thực hiện.
+•	Theo dõi và điều chỉnh: Giúp bạn duy trì đúng hướng, điều chỉnh kịp thời khi có biến đổi, đảm bảo đạt được mục tiêu một cách hiệu quả.
+5. Liên hệ thực tiễn với cuộc sống
+WOOP là một công cụ hữu ích giúp bạn xác định và thực hiện mục tiêu cá nhân và nghề nghiệp một cách hiệu quả. Bằng cách kết hợp mô hình WOOP với mô hình SWOT, bạn có thể có cái nhìn toàn diện hơn về khả năng và thách thức của mình, từ đó xây dựng kế hoạch phát triển toàn diện và hiệu quả hơn trong mọi lĩnh vực của cuộc sống.
+1. Khái niệm Triết lý kinh doanh:
+
+-	Triết lý kinh doanh là tập hợp các giá trị, nguyên tắc và niềm tin mà một doanh nghiệp đề ra và tuân theo trong suốt quá trình hoạt động. Nó thể hiện quan điểm của doanh nghiệp về cách thức tiến hành kinh doanh, định hướng cho các quyết định quản trị và phát triển. Triết lý kinh doanh giúp xác định mục tiêu dài hạn của doanh nghiệp, đồng thời định hình văn hóa doanh nghiệp, ảnh hưởng đến cách ứng xử với nhân viên, khách hàng, đối tác và cộng đồng.
+
+-	Vai trò của Triết lý kinh doanh trong sự phát triển của Doanh nghiệp:
+
+•	Định hướng chiến lược: Triết lý kinh doanh giúp xác định tầm nhìn, sứ mệnh và các giá trị cốt lõi của doanh nghiệp, từ đó dẫn dắt chiến lược phát triển và các quyết định quản trị.
+
+•	Xây dựng văn hóa doanh nghiệp: Triết lý kinh doanh định hình văn hóa doanh nghiệp, tạo ra môi trường làm việc lành mạnh, đoàn kết và có tính gắn bó cao giữa các thành viên.
+
+•	Tạo dựng lòng tin với khách hàng: Một triết lý kinh doanh rõ ràng và nhất quán giúp doanh nghiệp xây dựng lòng tin với khách hàng và đối tác, từ đó tạo điều kiện cho sự phát triển bền vững.
+
+•	Tạo động lực cho nhân viên: Khi nhân viên cảm thấy mình làm việc trong một doanh nghiệp có giá trị và triết lý kinh doanh rõ ràng, họ sẽ có thêm động lực, cam kết và trung thành với doanh nghiệp.
+
+
+2. Triết lý doanh nghiệp là cốt lõi của việc xây dựng văn hóa doanh nghiệp vì triết lý kinh doanh là phương châm hành động, là hệ giá trị và mục tiêu của doanh nghiệp giúp đảm bảo cho doanh nghiệp phát triển bền vững. Nền tảng triết lý doanh nghiệp sẽ được những quan điểm, tư tưởng đúng đắn phản ánh đúng thực tiễn kinh doanh, phân ánh tình thành, ý thức của doanh nghiệp ở mức độ bản chất.
+Ví dụ:
+Giá trị cốt lõi của tập đoàn VIETTEL gồm:
+1.	Thực tiễn là tiêu chuẩn kiểm nghiệm chân lý.
+-	Khác biệt giữa lý thuyết và thực tiễn.
+-	Đánh giá con người qua thực tiễn.
+2.	Trường thành qua thử thách gian khó.
+-	Vứt nó vào chỗ chết thì nó sẽ sống.
+-	Chúng ta không sợ mắc sai lầm.
+3.	Thích ứng nhanh là sức mạnh cạnh tranh.
+-	Phương châm của Viettel: Hãy thay đổi trước khi bắt buộc phải thay đổi để làm chủ quá trình thay đổi.
+-	Người Viettel coi thay đổi là tất yếu: Câu duy nhất không thay đổi chính là sự thay đổi.
+-	Thay đổi nhưng vẫn phải ổn định: Người Viettel coi thay đổi là tất yếu. Câu duy nhất không thể thay đổi chính là sự thay đổi.
+4.	Sáng tạo là sự sống.
+-	Sáng tạo tạo ra sự khác biệt: Không có cái gì tuyệt đối đúng, chẳng có cái gì tuyệt đối sai. Chiến thắng thuộc về ai dám nghĩ và dám làm, tạo ra sự khác biệt.
+-	Sự sáng tạo không chỉ ở người Viettel mà còn huy động sự sáng tạo trong các nguồn lực xã hội, nguồn sáng tạo không bao giờ cạn.
+5.	Tư duy hệ thống:
+-	Môi trường kinh doanh ngày càng phức tạp. Hệ thống là nghệ thuật để giảm hóa cái phức tạp.
+-	Hệ thống tư vấn hành được 70%, nhưng hệ thống thông minh trí tuệ tạo nên tài năng cá nhân. Vận còn 30% cho sự sáng tạo, bổ thâm sức của cá nhân.
+6.	Kết hợp Đông - Tây:
+-	Phương Đông: Trực quan, coi trọng con người.
+-	Phương Tây: Hệ thống, quy trình, máy móc. Viettel kết hợp cả hai.
+7.	Truyền thống và cách làm người lính:
+-	Viettel có cội nguồn từ quân đội.
+-	Mọi thành tựu sẽ khác biệt tạo nên sức mạnh Viettel là truyền thống và cách làm người lính.
+8.	Viettel là ngôi nhà chung.
+kajdfkdajhfdaf
+adsfdasjfadfhadslfa
+sdfadsfhad
+fadsfhad;fhad'faceadsfha
+fafdah
+fadsifohadsfa
+sfads'fhasd'fadsifohadsfaafash
+fadsffhash'dfasdifhasdfhasd;lfhkadsfasd
+dfasfhasdfhasdf;ashdfkdsfljsdafajdfadsf
+afadsfjads;lfkjsadfkjafl;djf;lfhadsadfadf;had;lfkjsadfkjaflf
+
+fa;dkfjadl;skfjads;lfjadsfjadslfkjadlkfjadsl;fkjads;jfadsf
+asdfhasd;fjladsfjasdl;fjdsklf;jsadlfkjsadkfdasl;fjadfjadf
+dfljal;skdfjald;fkjasdfjadl;fkjadfkjas'fadsffhashf
+
