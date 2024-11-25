@@ -21,6 +21,6 @@ public class GarbageCreator {
             outputStringBuilder.append((char) b);
         }
         endTime = System.currentTimeMillis();
-        System.out.println(endTime - startTime);
+        System.out.println("LeDongCanhPhu-20225755-"+(endTime - startTime));
     }
 }
