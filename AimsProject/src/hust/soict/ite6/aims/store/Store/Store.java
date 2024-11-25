@@ -26,10 +26,9 @@ public class Store {
                 }
                 qtyInStore--;
                 System.out.println("LeDongCanhPhu-20225755-The disc has been removed.");
-                break;
-            } else {
-                System.out.println("LeDongCanhPhu-20225755-The disc is not in the store.");
+                return;
             }
         }
+        System.out.println("LeDongCanhPhu-20225755-The disc is not in the store.");
     }
 }

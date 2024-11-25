@@ -22,6 +22,7 @@ public class StoreTest {
         store.removeDVD(dvd1);
         store.removeDVD(dvd2);
         store.removeDVD(dvd3);
+        store.removeDVD(dvd1);
     }
     
 }
