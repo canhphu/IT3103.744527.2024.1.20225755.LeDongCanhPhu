@@ -1,4 +1,4 @@
-package lab1.Matrices.src;
+package OtherProjects.hust.soict.ite6.lab01.Matrices.src;
 import java.util.Scanner;
 
 public class Matrices {
