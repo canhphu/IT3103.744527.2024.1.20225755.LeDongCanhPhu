@@ -12,8 +12,8 @@ public class TestPassingParameter {
         System.out.println("Jungle dvd title: " + jungleDVD.getTitle());
         System.out.println("cinderella dvd title: " + cinderellaDVD.getTitle());
 
-        // changeTitle(jungleDVD, cinderellaDVD.getTitle());
-        // System.out.println("Jungle dvd title: " + jungleDVD.getTitle());
+        changeTitle(jungleDVD, cinderellaDVD.getTitle());
+        System.out.println("Jungle dvd title: " + jungleDVD.getTitle());
     }
 
     public static void swap(Object o1, Object o2) {
@@ -46,6 +46,4 @@ public class TestPassingParameter {
         dvd2.setLength(temp.getLength());
         dvd2.setCost(temp.getCost());
     }
-
-    
 }
