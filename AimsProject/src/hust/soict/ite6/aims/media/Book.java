@@ -3,36 +3,13 @@ package hust.soict.ite6.aims.media;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Book {
+public class Book extends Media {
     
-    private int id;
-    private String title;
-    private String category;
-    private float cost;
     private List<String> authors = new ArrayList<String>();
     
     //Constructor
-    public Book(int id, String title, String category, float cost) {
-        this.id = id;
-        this.title = title;
-        this.category = category;
-        this.cost = cost;
-    }
-    //Getters
-    public int getId() {
-        return id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public float getCost() {
-        return cost;
+    public Book(String title, String category, float cost) {
+        super(title, category, cost);
     }
 
     // addAuthor method
