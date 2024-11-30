@@ -5,7 +5,7 @@ public abstract class Media {
     protected String title;
     protected String category;
     protected float cost;
-    private static int nbDigitalVideoDiscs = 0; // Class attribute
+    private static int nbDigitalVideoDiscs = 1; // Class attribute
     public int getId() {
         return id;
     }
@@ -21,10 +21,6 @@ public abstract class Media {
     public static int getNbDigitalVideoDiscs() {
         return nbDigitalVideoDiscs;
     }
-    public void setId(int id) {
-        id = nbDigitalVideoDiscs++;
-        this.id = id;
-    }
     public void setTitle(String title) {
         this.title = title;
     }
@@ -35,12 +31,13 @@ public abstract class Media {
         this.cost = cost;
     }
     public Media(String title, String category, float cost) {
+        this.id = nbDigitalVideoDiscs++;
         this.title = title;
         this.category = category;
         this.cost = cost;
     }
     public Media(String title) {
+        this.id = nbDigitalVideoDiscs++;
         this.title = title;
     }
-   
 }
