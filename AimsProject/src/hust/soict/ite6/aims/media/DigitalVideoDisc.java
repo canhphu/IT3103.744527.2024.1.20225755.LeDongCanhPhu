@@ -1,6 +1,6 @@
 package hust.soict.ite6.aims.media;
 
-public class DigitalVideoDisc extends Media{
+public class DigitalVideoDisc extends Disc{
     private String director;
     private int length;
     public String getDirector() {
@@ -18,20 +18,11 @@ public class DigitalVideoDisc extends Media{
     }
 
     public DigitalVideoDisc(String title, String category, String director, float cost) {
-        super(title, category, cost);
-        this.director = director;
+        super(title, category, director, cost);
     }
 
     public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
-        super(title, category, cost);
-        this.director = director;
-        this.length = length;
-    }
-    public void setDirector(String director) {
-        this.director = director;
-    }
-    public void setLength(int length) {
-        this.length = length;
+        super(title, category, cost, director, length);
     }
     public String toString() {
         return id + ". DVD - " + title + " - " + category + " - " + director + " - " + length + ": " + cost + "$";
