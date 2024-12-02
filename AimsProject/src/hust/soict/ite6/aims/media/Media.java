@@ -40,4 +40,15 @@ public abstract class Media {
         this.id = nbDigitalVideoDiscs++;
         this.title = title;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        Media media = (Media) o;
+        try {
+            String title = media.getTitle();
+            return title.equals(this.getTitle());
+        } catch (NullPointerException e) {
+            return false;
+        }
+    }
 }
