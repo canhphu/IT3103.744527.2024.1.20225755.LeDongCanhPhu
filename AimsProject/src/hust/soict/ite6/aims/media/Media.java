@@ -51,4 +51,9 @@ public abstract class Media {
             return false;
         }
     }
+    @Override
+    public String toString() {
+        return "Media {" + id + ". " + title + " - " + category + " - " + cost + "$}";
+    }
+    
 }
