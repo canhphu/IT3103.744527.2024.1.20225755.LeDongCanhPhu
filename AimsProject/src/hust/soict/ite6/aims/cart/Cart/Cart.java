@@ -30,7 +30,7 @@ public class Cart {
             itemsOrdered.remove(media);
             System.out.println("LeDongCanhPhu-20225755-Removed Successfully.");
         } else {
-            System.out.println("LeDongCanhPhu-20225755-The disc is not in the cart.");
+            System.out.println("LeDongCanhPhu-20225755-The media is not in the cart.");
         }
     }
     public float totalCost() {
@@ -40,7 +40,7 @@ public class Cart {
         }
         return total;
     }
-
+    
     public void printCart() {
         System.out.println("*************LeDongCanhPhu-20225755's CART*************");
         System.out.println("Ordered Items:");

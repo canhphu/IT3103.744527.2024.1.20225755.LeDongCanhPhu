@@ -1,7 +1,7 @@
 package hust.soict.ite6.aims.media;
 
 import java.util.Comparator;
-public abstract class Media {
+public abstract class Media implements Comparable<Media> {
     protected int id;
     protected String title;
     protected String category;
@@ -58,5 +58,10 @@ public abstract class Media {
     public String toString() {
         return "Media {" + id + ". " + title + " - " + category + " - " + cost + "$}";
     }
-    
+    @Override
+    public int compareTo(Media otherMedia) {
+        //Compare by title first
+        int titleComparison = this.getTitle().compareTo(otherMedia.getTitle());
+        return (titleComparison != 0) ? titleComparison : Float.compare(this.getCost(), otherMedia.getCost());
+    }
 }

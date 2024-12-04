@@ -242,6 +242,7 @@ public class Aims {
                     String category = num.nextLine();
                     System.out.print("Enter the cost: ");
                     float cost = num.nextFloat();
+                    num.nextLine(); // Consume the newline character
                     System.out.print("Enter the artist: ");
                     String artist = num.nextLine();
                     CompactDisc cd = new CompactDisc(title, category, cost, artist);
@@ -323,7 +324,6 @@ public class Aims {
                     mediabytitle = anOrder.SearchbyTitle(num.nextLine());
                     if(mediabytitle != null) {
                         anOrder.removeMedia(mediabytitle);
-                        System.out.println("Remove successfully.");
                         anOrder.printCart();
                         cartMenu();
                         option2 = num.nextInt();
