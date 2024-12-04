@@ -34,26 +34,22 @@ public class Store {
     }
 
     //Find media by ID
-    public void findMediabyID(int id) {
+    public Media findMediabyID(int id) {
         for(Media media : itemsInStore) {
             if(media.getId() == id) {
-                System.out.println("LeDongCanhPhu-20225755-Found successfully.");
-                System.out.println(media.toString());
-                return;
+                return media;
             }
         }
-        System.out.println("LeDongCanhPhu-20225755-Can't found.");
+        return null;
     }
 
     //Find media by title
-    public void findMediabyTitle(String title) {
+    public Media findMediabyTitle(String title) {
         for(Media media : itemsInStore) {
             if(media.getTitle().equalsIgnoreCase(title)) {
-                System.out.println("LeDongCanhPhu-20225755-Found successfully.");
-                System.out.println(media.toString());
-                return;
+                return media;
             }
         }
-        System.out.println("LeDongCanhPhu-20225755-Can't found.");
+        return null;
     }   
 }

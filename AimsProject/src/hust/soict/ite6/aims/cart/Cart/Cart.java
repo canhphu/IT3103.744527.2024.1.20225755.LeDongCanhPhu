@@ -1,10 +1,15 @@
 package hust.soict.ite6.aims.cart.Cart;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 import hust.soict.ite6.aims.media.Media;
+import hust.soict.ite6.aims.media.MediaComparatorByCostTitle;
+import hust.soict.ite6.aims.media.MediaComparatorByTitleCost;
 
 public class Cart {
+    public static final Comparator<Media> COMPARE_BY_TITLE_COST = new MediaComparatorByTitleCost();
+    public static final Comparator<Media> COMPARE_BY_COST_TITLE = new MediaComparatorByCostTitle();
     public static final int MAX_NUMBERS_ORDERED = 20;
     private ArrayList<Media> itemsOrdered = new ArrayList<Media>();
     
@@ -36,7 +41,6 @@ public class Cart {
         return total;
     }
 
-
     public void printCart() {
         System.out.println("*************LeDongCanhPhu-20225755's CART*************");
         System.out.println("Ordered Items:");
@@ -45,15 +49,13 @@ public class Cart {
         }
         System.out.println("*******************************************************");
     }
-    public void SearchbyID(int id) {
+    public Media SearchbyID(int id) {
         for(Media media : itemsOrdered) {
             if(media.getId() == id) {
-                System.out.println("LeDongCanhPhu-20225755-Found successfully.");
-                System.out.println(media.toString());
-                return;
+                return media;
             }
         }
-        System.out.println("LeDongCanhPhu-20225755-Can't found.");
+        return null;
     }
 
     public boolean isMatch(String title) {
@@ -65,23 +67,25 @@ public class Cart {
         return false;
     }
 
-    public void SearchbyTitle(String title) {
-        int check = 0;
+    public Media SearchbyTitle(String title) {
         for(Media media : itemsOrdered) {
             if(isMatch(title)) {
-                System.out.println(media.toString());
-                check = 1;
+                return media;
             }
         }
-        if(check == 1) {
-            System.out.println("LeDongCanhPhu-20225755-Found successfully.");
-            return;
-        }
-        System.out.println("LeDongCanhPhu-20225755-Can't found.");
+        return null;
     }
 
     public ArrayList<Media> getItemsOrdered() {
         return itemsOrdered;
     }
-
+    public void clearCart() {
+        itemsOrdered.clear();
+    }
+    public void sortByTitle() { 
+        itemsOrdered.sort(COMPARE_BY_TITLE_COST);      
+    }
+    public void sortByCost(){
+        itemsOrdered.sort(COMPARE_BY_COST_TITLE);
+    }   
 }
