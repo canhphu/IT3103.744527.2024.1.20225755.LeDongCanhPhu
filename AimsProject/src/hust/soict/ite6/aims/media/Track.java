@@ -26,8 +26,7 @@ public class Track implements Playable {
             System.out.println("Playing track: " + this.getTitle());
             System.out.println("Track length: " + this.getLength());
         } else {
-            System.err.println("Track length is non-positive");
-            throw new PlayerException();
+            throw new PlayerException("ERROR: Track length is non-positive");
         }
     }
 
