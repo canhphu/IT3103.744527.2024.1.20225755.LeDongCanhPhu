@@ -1,7 +1,9 @@
 package hust.soict.ite6.aims.screen;
 
+import hust.soict.ite6.aims.Aims.Aims;
 import hust.soict.ite6.aims.media.Book;
 import hust.soict.ite6.aims.media.CompactDisc;
+import hust.soict.ite6.aims.media.DigitalVideoDisc;
 import hust.soict.ite6.aims.media.Disc;
 import hust.soict.ite6.aims.media.Media;
 import javax.naming.LimitExceededException;
@@ -63,7 +65,12 @@ public class DetailScreen extends JFrame {
         btnAddToCart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Aims.getCart().addMedia(media);
+                try {
+                    Aims.getCart().addMedia(media);
+                } catch (LimitExceededException e1) {
+                    // TODO Auto-generated catch block
+                    e1.printStackTrace();
+                }
                 JOptionPane.showMessageDialog(null,
                         String.format("Added %s to cart.\nCurrent number of items in cart: %d", media.toString(),
                                 Aims.getCart().getItemsOrdered().size()));

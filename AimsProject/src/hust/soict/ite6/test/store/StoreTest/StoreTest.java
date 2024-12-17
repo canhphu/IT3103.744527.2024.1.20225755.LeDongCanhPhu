@@ -1,10 +1,12 @@
 package hust.soict.ite6.test.store.StoreTest;
 
+import javax.naming.LimitExceededException;
+
 import hust.soict.ite6.aims.media.DigitalVideoDisc;
 import hust.soict.ite6.aims.store.Store.Store;
 
 public class StoreTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception, LimitExceededException {
         //Create a new store
         Store store = new Store();
 

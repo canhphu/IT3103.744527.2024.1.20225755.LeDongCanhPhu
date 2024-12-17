@@ -94,5 +94,11 @@ public class Cart {
     }
     public void sortByCost(){
         itemsOrdered.sort(COMPARE_BY_COST_TITLE);
+    }
+
+
+    public void placeOrder() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'placeOrder'");
     }   
 }

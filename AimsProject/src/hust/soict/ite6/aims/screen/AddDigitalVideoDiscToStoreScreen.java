@@ -1,5 +1,6 @@
 package hust.soict.ite6.aims.screen;
 
+import javax.naming.LimitExceededException;
 import javax.swing.*;
 
 import hust.soict.ite6.aims.Aims.Aims;
@@ -53,6 +54,9 @@ public class AddDigitalVideoDiscToStoreScreen extends AddItemToStoreScreen {
                     } catch (NumberFormatException e1) {
                         JOptionPane.showMessageDialog(null, "Length and cost must be numeric!", "Error",
                                 JOptionPane.ERROR_MESSAGE);
+                    } catch (LimitExceededException e1) {
+                        // TODO Auto-generated catch block
+                        e1.printStackTrace();
                     }
                 }
                 break;

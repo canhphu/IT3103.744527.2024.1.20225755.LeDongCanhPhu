@@ -1,5 +1,6 @@
 package hust.soict.ite6.aims.screen;
 
+import javax.naming.LimitExceededException;
 import javax.swing.*;
 
 import hust.soict.ite6.aims.Aims.Aims;
@@ -115,6 +116,9 @@ public class AddCompactDiscToStoreScreen extends AddItemToStoreScreen {
                         } catch (NumberFormatException e1) {
                             JOptionPane.showMessageDialog(null, "Length must be an integer value!", "Error",
                                     JOptionPane.ERROR_MESSAGE);
+                        } catch (LimitExceededException e1) {
+                            // TODO Auto-generated catch block
+                            e1.printStackTrace();
                         }
                     }
                     break;

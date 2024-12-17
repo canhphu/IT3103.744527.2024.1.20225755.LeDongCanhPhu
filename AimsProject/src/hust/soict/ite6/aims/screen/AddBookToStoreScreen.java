@@ -1,5 +1,6 @@
 package hust.soict.ite6.aims.screen;
 
+import javax.naming.LimitExceededException;
 import javax.swing.*;
 
 import hust.soict.ite6.aims.Aims.Aims;
@@ -43,7 +44,12 @@ public class AddBookToStoreScreen extends AddItemToStoreScreen {
                         for (String author : tfAuthors.getText().split(",\\s*")) {
                             book.addAuthor(author);
                         }
-                        Aims.getStore().addMedia(book);
+                        try {
+                            Aims.getStore().addMedia(book);
+                        } catch (LimitExceededException e1) {
+                            // TODO Auto-generated catch block
+                            e1.printStackTrace();
+                        }
                         Aims.getStoreScreen().loadItemsToStore();
                         setVisible(false);
                         JOptionPane.showMessageDialog(null, "New Book added to store!");
