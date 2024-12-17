@@ -2,7 +2,10 @@ package hust.soict.ite6.aims.Aims;
 
 import java.util.Scanner;
 
+import javax.naming.LimitExceededException;
+
 import hust.soict.ite6.aims.cart.Cart.Cart;
+import hust.soict.ite6.aims.exception.PlayerException;
 import hust.soict.ite6.aims.media.Book;
 import hust.soict.ite6.aims.media.CompactDisc;
 import hust.soict.ite6.aims.media.DigitalVideoDisc;
@@ -10,7 +13,7 @@ import hust.soict.ite6.aims.media.Media;
 import hust.soict.ite6.aims.store.Store.Store;
 
 public class Aims {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception, PlayerException, LimitExceededException {
         //Create a new cart
         Cart anOrder = new Cart();
         Store aStore = new Store();
@@ -36,30 +39,30 @@ public class Aims {
         Book book4 = new Book("Moby Dick", "Adventure", 15.99f);
         Book book5 = new Book("War and Peace", "Historical", 20.99f);
 
-        aStore.addMedia(cd1);
-        aStore.addMedia(cd2);
-        aStore.addMedia(cd3);
-        aStore.addMedia(cd4);
-        aStore.addMedia(cd5);
+        Store.addMedia(cd1);
+        Store.addMedia(cd2);
+        Store.addMedia(cd3);
+        Store.addMedia(cd4);
+        Store.addMedia(cd5);
 
-        aStore.addMedia(dvd1);
-        aStore.addMedia(dvd2);
-        aStore.addMedia(dvd3);
-        aStore.addMedia(dvd4);
-        aStore.addMedia(dvd5);
+        Store.addMedia(dvd1);
+        Store.addMedia(dvd2);
+        Store.addMedia(dvd3);
+        Store.addMedia(dvd4);
+        Store.addMedia(dvd5);
 
-        aStore.addMedia(book1);
-        aStore.addMedia(book2);
-        aStore.addMedia(book3);
-        aStore.addMedia(book4);
-        aStore.addMedia(book5);
+        Store.addMedia(book1);
+        Store.addMedia(book2);
+        Store.addMedia(book3);
+        Store.addMedia(book4);
+        Store.addMedia(book5);
         
         // Add 3 CDs and 2 DVDs to the order
-        anOrder.addMedia(cd1);
-        anOrder.addMedia(cd2);
-        anOrder.addMedia(cd3);
-        anOrder.addMedia(dvd1);
-        anOrder.addMedia(dvd2);
+        Cart.addMedia(cd1);
+        Cart.addMedia(cd2);
+        Cart.addMedia(cd3);
+        Cart.addMedia(dvd1);
+        Cart.addMedia(dvd2);
 
         Media mediabytitle;
         int numberofDVD = 0;
@@ -72,7 +75,7 @@ public class Aims {
                 option = num.nextInt();
             }
             if(option == 1) { //View Store
-                aStore.printStore();
+                Store.printStore();
                 storeMenu(); //Store Menu
                 int option1 = num.nextInt();
                 num.nextLine(); // Consume the newline character
@@ -86,7 +89,7 @@ public class Aims {
                     if(option1 == 1) { //See a media's detail
                         System.out.print("Enter the title: ");
                         String title = num.nextLine();
-                        mediabytitle = aStore.findMediabyTitle(title); //Find media by title
+                        mediabytitle = Store.findMediabyTitle(title); //Find media by title
                         if(mediabytitle != null) {
                             System.out.println(mediabytitle.toString());
                             mediaDetailsMenu(); //Media Detail Menu
@@ -99,7 +102,7 @@ public class Aims {
                                     option3 = num.nextInt();
                                 }
                                 if(option3 == 1) { //Add to cart
-                                    anOrder.addMedia(mediabytitle);
+                                    Cart.addMedia(mediabytitle);
                                     storeMenu();
                                     option1 = num.nextInt();
                                     num.nextLine(); // Consume the newline character
@@ -131,11 +134,11 @@ public class Aims {
                         }
                     }
                     if(option1 == 2) { //Add a media to cart
-                        aStore.printStore();
+                        Store.printStore();
                         System.out.print("Choose the media you want to add: ");
-                        mediabytitle = aStore.findMediabyTitle(num.nextLine());
+                        mediabytitle = Store.findMediabyTitle(num.nextLine());
                         if(mediabytitle != null) {
-                            anOrder.addMedia(mediabytitle);
+                            Cart.addMedia(mediabytitle);
                             if(mediabytitle instanceof DigitalVideoDisc) {
                                 numberofDVD++;
                             }
@@ -151,9 +154,9 @@ public class Aims {
                         }
                     }
                     if(option1 == 3) { //Play a media
-                        aStore.printStore();
+                        Store.printStore();
                         System.out.print("Choose the media you want to play: ");
-                        mediabytitle = aStore.findMediabyTitle(num.nextLine());
+                        mediabytitle = Store.findMediabyTitle(num.nextLine());
                         if(mediabytitle instanceof DigitalVideoDisc) {
                             ((DigitalVideoDisc) mediabytitle).play();
                         }
@@ -181,7 +184,7 @@ public class Aims {
             }
         }
         if(option == 2) { //Update Store
-            aStore.printStore();
+            Store.printStore();
             System.out.println("What do you want to do?");
             System.out.print("0-Remove\n1-Add: ");
             int option4 = num.nextInt();
@@ -192,9 +195,9 @@ public class Aims {
             }
             if(option4 == 0) { //Remove
                 System.out.print("Enter the title: ");
-                mediabytitle = aStore.findMediabyTitle(num.nextLine());
-                aStore.removeMedia(mediabytitle);
-                aStore.printStore();
+                mediabytitle = Store.findMediabyTitle(num.nextLine());
+                Store.removeMedia(mediabytitle);
+                Store.printStore();
                 System.out.print("Press any key to go back: ");
                 String back = num.nextLine();
                 showMenu();
@@ -211,8 +214,8 @@ public class Aims {
                     System.out.print("Enter the cost: ");
                     float cost = num.nextFloat();
                     Book book = new Book(title, category, cost);
-                    aStore.addMedia(book);
-                    aStore.printStore();
+                    Store.addMedia(book);
+                    Store.printStore();
                     System.out.print("Press any key to go back: ");
                     String back = num.nextLine();
                     showMenu();
@@ -229,8 +232,8 @@ public class Aims {
                     System.out.print("Enter the cost: ");
                     float cost = num.nextFloat();
                     DigitalVideoDisc dvd = new DigitalVideoDisc(title, category, director, length, cost);
-                    aStore.addMedia(dvd);
-                    aStore.printStore();
+                    Store.addMedia(dvd);
+                    Store.printStore();
                     System.out.print("Press any key to go back: ");
                     String back = num.nextLine();
                     showMenu();
@@ -246,8 +249,8 @@ public class Aims {
                     System.out.print("Enter the artist: ");
                     String artist = num.nextLine();
                     CompactDisc cd = new CompactDisc(title, category, cost, artist);
-                    aStore.addMedia(cd);
-                    aStore.printStore();
+                    Store.addMedia(cd);
+                    Store.printStore();
                     System.out.print("Press any key to go back: ");
                     String back = num.nextLine();
                     showMenu();

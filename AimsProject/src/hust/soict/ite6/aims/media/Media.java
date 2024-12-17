@@ -45,12 +45,15 @@ public abstract class Media implements Comparable<Media> {
     }
 
     @Override
-    public boolean equals(Object o) {
-        Media media = (Media) o;
+    public boolean equals(Object o) throws NullPointerException, ClassCastException {
         try {
+            o.getClass().cast(this);
+            Media media = (Media) o;
             String title = media.getTitle();
             return title.equals(this.getTitle());
         } catch (NullPointerException e) {
+            return false;
+        } catch(ClassCastException e) {
             return false;
         }
     }
