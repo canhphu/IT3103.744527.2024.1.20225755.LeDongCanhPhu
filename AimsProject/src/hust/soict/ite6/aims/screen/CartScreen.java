@@ -3,6 +3,7 @@ package hust.soict.ite6.aims.screen;
 import java.awt.Dimension;
 import java.io.IOException;
 
+import javax.naming.LimitExceededException;
 import javax.swing.JFrame;
 
 import hust.soict.ite6.aims.cart.Cart.Cart;
@@ -51,7 +52,7 @@ public class CartScreen extends JFrame {
 
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws LimitExceededException {
         Cart cart = new Cart();
         // Compact Discs
         CompactDisc cd = new CompactDisc( "Yunomi's Vol4 CD", "Music", 10.99f, "Yunomi", 180, "Yunomi");

@@ -1,9 +1,11 @@
 package hust.soict.ite6.aims.screen;
 
 import hust.soict.ite6.aims.cart.Cart.*;
+import hust.soict.ite6.aims.exception.PlayerException;
 import hust.soict.ite6.aims.media.Media;
 import hust.soict.ite6.aims.media.Playable;
 
+import javax.naming.LimitExceededException;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -60,13 +62,23 @@ public class MediaStore extends JPanel {//PhuLDC_20225755
             switch (button) {
                 //PhuLDC_20225755
                 case "Add to cart":
-                    Cart.addMedia(media);
+                    try {
+                        Cart.addMedia(media);
+                    } catch (LimitExceededException e1) {
+                        // TODO Auto-generated catch block
+                        e1.printStackTrace();
+                    }
                     JOptionPane.showMessageDialog(null,
                             String.format("Added %s to cart.\nCurrent number of items in cart: %d", media.toString(),
                                     Cart.getItemsOrdered().size()));
                     break;
                 case "Play":
-                    ((Playable) media).play();
+                    try {
+                        ((Playable) media).play();
+                    } catch (PlayerException e1) {
+                        // TODO Auto-generated catch block
+                        e1.printStackTrace();
+                    }
                     break;
                 case "Details":
                     JOptionPane.showMessageDialog(null,"Detail Page");

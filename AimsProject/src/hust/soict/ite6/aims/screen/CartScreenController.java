@@ -4,6 +4,7 @@ import javax.swing.JOptionPane;
 
 import hust.soict.ite6.aims.Aims.Aims;
 import hust.soict.ite6.aims.cart.Cart.Cart;
+import hust.soict.ite6.aims.exception.PlayerException;
 import hust.soict.ite6.aims.media.Media;
 import hust.soict.ite6.aims.media.Playable;
 import javafx.beans.value.ChangeListener;
@@ -138,13 +139,13 @@ public class CartScreenController {//PhuLDC_20225755
     }
     //PhuLDC_20225755
     @FXML
-    void btnPlayPressed(ActionEvent event) {
+    void btnPlayPressed(ActionEvent event) throws PlayerException {
         Media media = tblMedia.getSelectionModel().getSelectedItem();
         ((Playable) media).play();
     }
     //PhuLDC_20225755
     @FXML
-    void btnRemovePressed(ActionEvent event) {
+    void btnRemovePressed(ActionEvent event) throws Exception {
         Media media = tblMedia.getSelectionModel().getSelectedItem();
         cart.removeMedia(media);
         updateCost();

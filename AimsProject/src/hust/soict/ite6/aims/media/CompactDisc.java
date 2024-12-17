@@ -1,5 +1,6 @@
 package hust.soict.ite6.aims.media;
 
+import java.awt.Component;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -62,5 +63,9 @@ public class CompactDisc extends Disc implements Playable {
                 track.play();
             }
         }
+    }
+    public Component getTracks() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getTracks'");
     }
 }

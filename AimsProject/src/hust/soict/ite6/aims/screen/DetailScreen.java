@@ -1,15 +1,12 @@
 package hust.soict.ite6.aims.screen;
 
-import hust.soict.ite6.aims.Aims.Aims;
 import hust.soict.ite6.aims.media.Book;
 import hust.soict.ite6.aims.media.CompactDisc;
-import hust.soict.ite6.aims.media.DigitalVideoDisc;
 import hust.soict.ite6.aims.media.Disc;
 import hust.soict.ite6.aims.media.Media;
-import hust.soict.ite6.exception.DuplicatedItemException;
-
 import javax.naming.LimitExceededException;
 import javax.swing.*;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
