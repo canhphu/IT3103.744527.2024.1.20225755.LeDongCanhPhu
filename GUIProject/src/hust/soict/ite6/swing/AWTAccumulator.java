@@ -7,7 +7,7 @@ import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class AWTAccumulator extends Frame {
+public class AWTAccumulator extends Frame {//PhuLDC_20225755
 
     private TextField tfInput;
     private TextField tfOutput;
