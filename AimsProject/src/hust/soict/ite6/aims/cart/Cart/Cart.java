@@ -3,6 +3,8 @@ package hust.soict.ite6.aims.cart.Cart;
 import java.util.ArrayList;
 import java.util.Comparator;
 
+import javax.naming.LimitExceededException;
+
 import hust.soict.ite6.aims.media.Media;
 import hust.soict.ite6.aims.media.MediaComparatorByCostTitle;
 import hust.soict.ite6.aims.media.MediaComparatorByTitleCost;
@@ -16,27 +18,29 @@ public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;
     private static ObservableList<Media> itemsOrdered = FXCollections.observableArrayList();
         
-        public static void addMedia(Media media) {
+        public static void addMedia(Media media) throws LimitExceededException {
             if(itemsOrdered.size() < MAX_NUMBERS_ORDERED) {
             itemsOrdered.add(media);
             System.out.println("LeDongCanhPhu-20225755-Added Successfully.");
         } else {
-            System.out.println("LeDongCanhPhu-20225755-The cart is almost full.");
+            throw new LimitExceededException("Error: The number of " + media.getTitle() + " has reached its limit.");
         }
     }
 
-    public void removeMedia(Media media) {
-        if(itemsOrdered.size() == 0) {
-            System.out.println("LeDongCanhPhu-20225755-The cart is empty.");
-            return;
-        } if(itemsOrdered.contains(media)) {
+
+        public void removeMedia(Media media) throws Exception {
+            if(itemsOrdered.size() == 0) {
+            throw new Exception("LeDongCanhPhu-20225755-The cart is empty.");
+            } 
+            if(itemsOrdered.contains(media)) {
             itemsOrdered.remove(media);
             System.out.println("LeDongCanhPhu-20225755-Removed Successfully.");
-        } else {
-            System.out.println("LeDongCanhPhu-20225755-The media is not in the cart.");
+            } else {
+            throw new Exception("LeDongCanhPhu-20225755-The media is not in the cart.");
+            }
         }
-    }
-    public float totalCost() {
+
+        public float totalCost() {
         float total = 0;
         for(Media media : itemsOrdered) {
             total += media.getCost();
@@ -79,8 +83,8 @@ public class Cart {
         return null;
     }
 
-    public static ArrayList<Media> getItemsOrdered() {
-        return itemsOrdered;
+    public static ObservableList<Media> getItemsOrdered() {
+        return FXCollections.observableArrayList(itemsOrdered);
     }
     public void clearCart() {
         itemsOrdered.clear();
