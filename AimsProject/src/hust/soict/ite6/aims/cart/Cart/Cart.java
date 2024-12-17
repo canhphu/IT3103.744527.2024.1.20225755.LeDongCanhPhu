@@ -6,12 +6,15 @@ import java.util.Comparator;
 import hust.soict.ite6.aims.media.Media;
 import hust.soict.ite6.aims.media.MediaComparatorByCostTitle;
 import hust.soict.ite6.aims.media.MediaComparatorByTitleCost;
+import javafx.beans.Observable;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 public class Cart {
     public static final Comparator<Media> COMPARE_BY_TITLE_COST = new MediaComparatorByTitleCost();
     public static final Comparator<Media> COMPARE_BY_COST_TITLE = new MediaComparatorByCostTitle();
     public static final int MAX_NUMBERS_ORDERED = 20;
-    private static ArrayList<Media> itemsOrdered = new ArrayList<Media>();
+    private static ObservableList<Media> itemsOrdered = FXCollections.observableArrayList();
         
         public static void addMedia(Media media) {
             if(itemsOrdered.size() < MAX_NUMBERS_ORDERED) {
