@@ -64,4 +64,13 @@ public abstract class Media implements Comparable<Media> {
         int titleComparison = this.getTitle().compareTo(otherMedia.getTitle());
         return (titleComparison != 0) ? titleComparison : Float.compare(this.getCost(), otherMedia.getCost());
     }
+    
+    public boolean isMatch(String title) {
+        String[] keywords = title.split("\\s+");
+        for (String word : keywords) {
+            if (this.title.toLowerCase().contains(word.toLowerCase()))
+                return true;
+        }
+        return false;
+    }
 }

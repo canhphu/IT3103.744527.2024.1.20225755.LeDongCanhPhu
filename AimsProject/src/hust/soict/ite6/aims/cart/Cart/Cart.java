@@ -11,10 +11,10 @@ public class Cart {
     public static final Comparator<Media> COMPARE_BY_TITLE_COST = new MediaComparatorByTitleCost();
     public static final Comparator<Media> COMPARE_BY_COST_TITLE = new MediaComparatorByCostTitle();
     public static final int MAX_NUMBERS_ORDERED = 20;
-    private ArrayList<Media> itemsOrdered = new ArrayList<Media>();
-    
-    public void addMedia(Media media) {
-        if(itemsOrdered.size() < MAX_NUMBERS_ORDERED) {
+    private static ArrayList<Media> itemsOrdered = new ArrayList<Media>();
+        
+        public static void addMedia(Media media) {
+            if(itemsOrdered.size() < MAX_NUMBERS_ORDERED) {
             itemsOrdered.add(media);
             System.out.println("LeDongCanhPhu-20225755-Added Successfully.");
         } else {
@@ -76,7 +76,7 @@ public class Cart {
         return null;
     }
 
-    public ArrayList<Media> getItemsOrdered() {
+    public static ArrayList<Media> getItemsOrdered() {
         return itemsOrdered;
     }
     public void clearCart() {

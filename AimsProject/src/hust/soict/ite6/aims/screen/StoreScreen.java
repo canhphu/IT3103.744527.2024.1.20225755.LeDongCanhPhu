@@ -35,7 +35,10 @@ import javax.swing.event.DocumentListener;
 import javax.swing.plaf.basic.BasicInternalFrameTitlePane.IconifyAction;
 import javax.swing.text.BadLocationException;
 
+import hust.soict.ite6.aims.media.Media;
 import hust.soict.ite6.aims.store.Store.Store;
+import javafx.collections.FXCollections;
+import javafx.collections.transformation.FilteredList;
 //BachDT_20225600
 public class StoreScreen extends JFrame {
 

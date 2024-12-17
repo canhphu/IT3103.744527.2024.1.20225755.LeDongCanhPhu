@@ -1,11 +1,9 @@
 package hust.soict.ite6.aims.screen;
 
-import hust.soict.ite6.aims.Aims.*;
 import hust.soict.ite6.aims.cart.Cart.*;
 import hust.soict.ite6.aims.media.Media;
 import hust.soict.ite6.aims.media.Playable;
 
-import javax.naming.LimitExceededException;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
