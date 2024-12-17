@@ -1,0 +1,79 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Aims",
+            "request": "launch",
+            "mainClass": "hust.soict.ite6.aims.Aims.Aims",
+            "projectName": "IT3103.744527.2024.1.20225755.LeDongCanhPhu_e43b1ebf"
+        },
+        {
+            "type": "java",
+            "name": "Painter",
+            "request": "launch",
+            "mainClass": "hust.soict.ite6.javafx.Painter",
+            "projectName": "IT3103.744527.2024.1.20225755.LeDongCanhPhu_e43b1ebf",
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-21.0.5/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "AWTAccumulator",
+            "request": "launch",
+            "mainClass": "hust.soict.ite6.swing.AWTAccumulator",
+            "projectName": "IT3103.744527.2024.1.20225755.LeDongCanhPhu_e43b1ebf"
+        },
+        {
+            "type": "java",
+            "name": "NumberGrid",
+            "request": "launch",
+            "mainClass": "hust.soict.ite6.swing.NumberGrid",
+            "projectName": "IT3103.744527.2024.1.20225755.LeDongCanhPhu_e43b1ebf"
+        },
+        {
+            "type": "java",
+            "name": "SwingAccumulator",
+            "request": "launch",
+            "mainClass": "hust.soict.ite6.swing.SwingAccumulator",
+            "projectName": "IT3103.744527.2024.1.20225755.LeDongCanhPhu_e43b1ebf"
+        },
+        {
+            "type": "java",
+            "name": "CartTest",
+            "request": "launch",
+            "mainClass": "hust.soict.ite6.test.cart.CartTest.CartTest",
+            "projectName": "IT3103.744527.2024.1.20225755.LeDongCanhPhu_e43b1ebf"
+        },
+        {
+            "type": "java",
+            "name": "TestPassingParameter",
+            "request": "launch",
+            "mainClass": "hust.soict.ite6.test.disc.TestPassingParameter.TestPassingParameter",
+            "projectName": "IT3103.744527.2024.1.20225755.LeDongCanhPhu_e43b1ebf"
+        },
+        {
+            "type": "java",
+            "name": "TestPolymorphism",
+            "request": "launch",
+            "mainClass": "hust.soict.ite6.test.disc.TestPolymorphism",
+            "projectName": "IT3103.744527.2024.1.20225755.LeDongCanhPhu_e43b1ebf"
+        },
+        {
+            "type": "java",
+            "name": "StoreTest",
+            "request": "launch",
+            "mainClass": "hust.soict.ite6.test.store.StoreTest.StoreTest",
+            "projectName": "IT3103.744527.2024.1.20225755.LeDongCanhPhu_e43b1ebf"
+        }
+    ]
+}
