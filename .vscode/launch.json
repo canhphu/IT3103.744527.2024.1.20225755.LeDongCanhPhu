@@ -4,7 +4,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
+        {
+            "type": "java",
+            "name": "CartScreen",
+            "request": "launch",
+            "mainClass": "hust.soict.ite6.aims.screen.CartScreen",
+            "projectName": "IT3103.744527.2024.1.20225755.LeDongCanhPhu_e43b1ebf",
+        },
         {
             "type": "java",
             "name": "Current File",
