@@ -45,12 +45,15 @@ public abstract class Media implements Comparable<Media> {
     }
 
     @Override
-    public boolean equals(Object o) {
-        Media media = (Media) o;
+    public boolean equals(Object o) throws NullPointerException, ClassCastException {
         try {
+            o.getClass().cast(this);
+            Media media = (Media) o;
             String title = media.getTitle();
             return title.equals(this.getTitle());
         } catch (NullPointerException e) {
+            return false;
+        } catch(ClassCastException e) {
             return false;
         }
     }
@@ -63,5 +66,14 @@ public abstract class Media implements Comparable<Media> {
         //Compare by title first
         int titleComparison = this.getTitle().compareTo(otherMedia.getTitle());
         return (titleComparison != 0) ? titleComparison : Float.compare(this.getCost(), otherMedia.getCost());
+    }
+    
+    public boolean isMatch(String title) {
+        String[] keywords = title.split("\\s+");
+        for (String word : keywords) {
+            if (this.title.toLowerCase().contains(word.toLowerCase()))
+                return true;
+        }
+        return false;
     }
 }

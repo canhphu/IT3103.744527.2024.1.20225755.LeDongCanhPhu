@@ -1,7 +1,12 @@
 package hust.soict.ite6.aims.media;
 
+import java.awt.Component;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.swing.JOptionPane;
+
+import hust.soict.ite6.aims.exception.PlayerException;
 
 public class CompactDisc extends Disc implements Playable {
     private String artist;
@@ -49,12 +54,19 @@ public class CompactDisc extends Disc implements Playable {
         setLength(length);
         return length;
     }
-    public void play() {
-        System.out.println("Playing CD: " + this.getTitle());
-        System.out.println("CD artist: " + this.getArtist());
-        System.out.println("CD length:" + this.getLength());
-        for(Track track : tracks) {
-            track.play();
+    public void play() throws PlayerException {
+        int length = this.getLength();
+        if(length <= 0) {
+            System.err.println("CD length is non-positive");
+        } else {
+            JOptionPane.showMessageDialog(null, "Playing CD: " + this.getTitle() + "\nCD length: " + this.getLength());
+            for(Track track : tracks) {
+                track.play();
+            }
         }
+    }
+    public List<Track> getTracks() {
+        // TODO Auto-generated method stub
+        return tracks;
     }
 }

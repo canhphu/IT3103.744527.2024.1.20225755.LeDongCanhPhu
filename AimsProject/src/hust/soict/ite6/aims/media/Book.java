@@ -33,4 +33,12 @@ public class Book extends Media {
         }
         System.out.println("Not found the author in the list");
     }
+
+    public List<String> getAuthors() {
+        return authors;
+    }
+
+    public void setAuthors(List<String> authors) {
+        this.authors = authors;
+    }
 }

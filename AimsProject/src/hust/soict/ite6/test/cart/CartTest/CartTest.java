@@ -4,7 +4,7 @@ import hust.soict.ite6.aims.cart.Cart.Cart;
 import hust.soict.ite6.aims.media.DigitalVideoDisc;
 
 public class CartTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         //Create a new cart
         Cart cart = new Cart();
 

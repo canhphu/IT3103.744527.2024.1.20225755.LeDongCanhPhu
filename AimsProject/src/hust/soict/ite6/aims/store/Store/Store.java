@@ -2,22 +2,28 @@ package hust.soict.ite6.aims.store.Store;
 
 import java.util.ArrayList;
 
+import javax.naming.LimitExceededException;
+
 import hust.soict.ite6.aims.media.Media;
 
 public class Store {
-    private ArrayList<Media> itemsInStore = new ArrayList<Media>();
-
-    public void addMedia(Media media) {
-        itemsInStore.add(media);
-        System.out.println("LeDongCanhPhu-20225755-Added Successfully.");
+    private static ArrayList<Media> itemsInStore = new ArrayList<Media>();
+    
+        public static void addMedia(Media media) throws LimitExceededException {
+            if(itemsInStore.size() >= 20) {
+            throw new LimitExceededException("Error: The number of " + media.getTitle() + " has reached its limit.");
+        } else {
+            itemsInStore.add(media);
+            System.out.println("LeDongCanhPhu-20225755-Added Successfully.");
+        }
     }
 
-    public void removeMedia(Media media) {
+    public static void removeMedia(Media media) throws Exception {
         if(itemsInStore.contains(media)) {
             itemsInStore.remove(media);
             System.out.println("LeDongCanhPhu-20225755-Removed Successfully.");
         } else {
-            System.out.println("LeDongCanhPhu-20225755-Can't found.");
+            throw new Exception("LeDongCanhPhu-20225755-The media is not in the store.");
         }
     }
     //Getter and setter
@@ -25,7 +31,7 @@ public class Store {
         return itemsInStore;
     }
     
-    public void printStore() {
+    public static void printStore() {
         System.out.println("*************LeDongCanhPhu-20225755's STORE*************");
         for(Media media : itemsInStore) {
             System.out.println(media.toString());
@@ -44,7 +50,7 @@ public class Store {
     }
 
     //Find media by title
-    public Media findMediabyTitle(String title) {
+    public static Media findMediabyTitle(String title) {
         for(Media media : itemsInStore) {
             if(media.getTitle().equalsIgnoreCase(title)) {
                 return media;
