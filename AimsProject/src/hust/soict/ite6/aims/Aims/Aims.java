@@ -38,7 +38,7 @@ public class Aims {
                 new Book("Dune Book", "Sci-fi", 9.99f),
 
         };
-         //BachDT_20225600
+         //Phu_LDC20225755
         for (Media m : sampleMedia) {
             store.addMedia(m);
         }

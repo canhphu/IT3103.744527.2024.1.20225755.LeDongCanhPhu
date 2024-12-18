@@ -10,6 +10,7 @@
             "request": "launch",
             "mainClass": "hust.soict.ite6.aims.screen.CartScreen",
             "projectName": "IT3103.744527.2024.1.20225755.LeDongCanhPhu_e43b1ebf",
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-21.0.5/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
