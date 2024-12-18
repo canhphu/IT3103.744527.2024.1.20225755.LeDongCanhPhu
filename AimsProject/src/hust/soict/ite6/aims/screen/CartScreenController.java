@@ -148,6 +148,7 @@ public class CartScreenController {//PhuLDC_20225755
     void btnRemovePressed(ActionEvent event) throws Exception {
         Media media = tblMedia.getSelectionModel().getSelectedItem();
         cart.removeMedia(media);
+        tblMedia.getItems().remove(media);
         updateCost();
     }
     //PhuLDC_20225755

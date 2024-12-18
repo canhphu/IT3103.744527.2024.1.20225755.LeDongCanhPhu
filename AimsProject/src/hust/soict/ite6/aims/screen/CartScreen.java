@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import javax.naming.LimitExceededException;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 import hust.soict.ite6.aims.cart.Cart.Cart;
 import hust.soict.ite6.aims.media.Book;
@@ -36,6 +37,7 @@ public class CartScreen extends JFrame {
             public void run() {
                 // TODO Auto-generated method stub
                 try {
+                    // JOptionPane.showMessageDialog(fxPanel, "Cart view is loading...");
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("/hust/soict/ite6/aims/screen/cart.fxml"));
                     CartScreenController controller = new CartScreenController(cart); // Pass the cart object
                     loader.setController(controller); // Set the controller programmatically

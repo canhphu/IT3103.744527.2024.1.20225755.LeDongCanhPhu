@@ -30,10 +30,10 @@ public class Aims {
         Media[] sampleMedia = new Media[]{        // Compact Discs
                 new CompactDisc("Yunomi's Vol4 CD", "Music", 10.99f, "Yunomi", 180, "Yunomi"),
                 new CompactDisc("PhuLDC_20225755", "Pop", 12.99f, "Aimer", 170, "Aimer"),
-
-// Digital Video Discs
-                new DigitalVideoDisc("Highlight MV", "Music", "Hatsune Miku", 123),
-
+//Digital Video Discs
+                new DigitalVideoDisc("Interstellar", "Sci-fi", "Christopher Nolan",170, 169),
+                new DigitalVideoDisc("Inception", "Thriller", "Christopher Nolan",180, 148),
+                new DigitalVideoDisc("Frozen 2", "Animation", "Disney",200, 103),
 // Books
                 new Book("Dune Book", "Sci-fi", 9.99f),
 

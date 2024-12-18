@@ -4,6 +4,8 @@ import hust.soict.ite6.aims.exception.PlayerException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.JOptionPane;
+
 public class Track implements Playable {
     private String title;
     private int length;
@@ -30,11 +32,15 @@ public class Track implements Playable {
         return length;
     }
 
+    public List<Track> getTracks() {
+        return tracks;
+    }
+
     public void play() throws PlayerException {
         try {
-            if (this.getLength() > 0) {
-                System.out.println("Playing track: " + this.getTitle());
-                System.out.println("Track length: " + this.getLength());
+            int length = this.getLength();
+            if (length > 0) {
+                JOptionPane.showMessageDialog(null, "Playing track: " + this.getTitle() + "\nTrack length: " + this.getLength());
                 java.util.Iterator<Track> iter = tracks.iterator();
                 Track nextTrack;
                 while (iter.hasNext()) {

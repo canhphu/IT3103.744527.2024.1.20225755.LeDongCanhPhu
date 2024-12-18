@@ -4,6 +4,8 @@ import java.awt.Component;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.JOptionPane;
+
 import hust.soict.ite6.aims.exception.PlayerException;
 
 public class CompactDisc extends Disc implements Playable {
@@ -53,19 +55,18 @@ public class CompactDisc extends Disc implements Playable {
         return length;
     }
     public void play() throws PlayerException {
-        if(this.getLength() == 0) {
+        int length = this.getLength();
+        if(length <= 0) {
             System.err.println("CD length is non-positive");
         } else {
-            System.out.println("Playing CD: " + this.getTitle());
-            System.out.println("CD artist: " + this.getArtist());
-            System.out.println("CD length:" + this.getLength());
+            JOptionPane.showMessageDialog(null, "Playing CD: " + this.getTitle() + "\nCD length: " + this.getLength());
             for(Track track : tracks) {
                 track.play();
             }
         }
     }
-    public Component getTracks() {
+    public List<Track> getTracks() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getTracks'");
+        return tracks;
     }
 }
